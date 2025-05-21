@@ -1,0 +1,108 @@
+/* Global resets and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7f9;
+  color: #333;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+}
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+header p.contact {
+  font-size: 0.9rem;
+  color: #555;
+}
+header a {
+  color: #3498db;
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Section headings */
+section {
+  margin-bottom: 1.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-bottom: 0.3rem;
+}
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #3498db;
+}
+
+/* Subheadings */
+h3 {
+  font-size: 1.25rem;
+  color: #34495e;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Lists */nul, .skills-list, .strengths-list {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.skills-list li, .strengths-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Project and experience details */
+section p, section ul {
+  margin-top: 0.5rem;
+}
+
+/* Emphasis */
+strong {
+  color: #2c3e50;
+}
+em {
+  font-style: italic;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
